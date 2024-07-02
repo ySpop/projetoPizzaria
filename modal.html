@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Corvinal Group" />
+  <meta name="keywords" content="pizzaria, pizza, perto" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/footer.css" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="stylesheet" href="./styles/modal.css" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Pizza</title>
+</head>
+
+<body>
+  <header>
+    <section class="header-content">
+      <section class="header-top">
+        <div class="header-top-content container-grid">
+          <img class="logo" src="./assets/images/pizzaria_logo-removebg-preview.png" />
+          <nav>
+            <ul>
+              <li>
+                <span class="material-symbols-outlined"> home </span><a href="#">Início</a>
+              </li>
+              <li>
+                <span class="material-symbols-outlined">
+                  restaurant_menu </span><a href="#">Cardápio</a>
+              </li>
+              <li>
+                <span class="material-symbols-outlined"> quiz </span><a href="#">Sobre nós</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="right-header">
+            <div class="local">
+              <img src="./assets/icons/geo-alt.svg" />
+              <p>R. Moreira de Gódoi, 18</p>
+              <img src="./assets/icons/keyboard_arrow_down_24dp_FILL0_wght400_GRAD0_opsz24.svg" />
+            </div>
+
+            <div class="circle-sign">
+              <img src="./assets/icons/person-circle.svg" />
+              <a>Perfil</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header-bottom">
+        <div class="header-bottom-content container-grid">
+          <div class="loja-location">
+            <img src="./assets/icons/shop.svg" />
+            <p>Loja: <span>???</span></p>
+          </div>
+
+          <div class="order-type-selector">
+            <div>
+              <p>Delivery</p>
+            </div>
+            <span class="material-symbols-outlined"> sync_alt </span>
+            <div>
+              <p>Retirar</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </header>
+  <main>
+    <section class="modal-container container-grid">
+      <section class="selecionada">
+        <div class="div">
+          <h2>Baiana</h2>
+          <h3>Calabresa fatiada, cebola, tomate, pimenta e azeitonas pretas</h3>
+        </div>
+        <div>
+          <img src="./assets/images/pizza/pizza_baiana.png" alt="pizza baiana">
+        </div>
+        <div class="button">
+          <button class="bu">Adicionar</button>
+          <h3>A partir de: </h3>
+          <h2>R$39.90</h2>
+          <div class="contador">
+            <button>-</button>
+            <p>1</p>
+            <button>+</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="tamanho">
+        <h2>TAMANHO DA PIZZA</h2>
+        <section class="opcoes">
+          <div class="cardPizza1">
+            <h3>PIZZA PEQUENA (4 FATIAS)</h3>
+            <hr>
+            <h2>R$ 39.90</h2>
+          </div>
+          <div class="cardPizza1">
+            <h3>PIZZA MÉDIA (8 FATIAS)</h3>
+            <hr>
+            <h2>R$ 49.90</h2>
+          </div>
+          <div class="cardPizza1">
+            <h3><b>PIZZA GRANDE (12 FATIAS)</b></h3>
+            <hr>
+            <h2>R$ 69.90</h2>
+          </div>
+        </section>
+
+      </section>
+
+      <section class="bebidas">
+        <h2>BEBIDAS</h2>
+        <section class="opcoes">
+          <div class="cardPizza1">
+            <h2>Cola-Cola</h2>
+            <span>R$ 7,00</span>
+            <input class="checkboxb" type="checkbox">
+          </div>
+          <div class="cardPizza1">
+            <h2>Guaraná</h2>
+            <span>R$ 6,50</span>
+            <input class="checkboxb" type="checkbox">
+          </div>
+          <div class="cardPizza1">
+            <h2>Fanta Laranja</h2>
+            <span>R$ 6,50</span>
+            <input class="checkboxb" type="checkbox">
+          </div>
+          <div class="cardPizza1">
+            <h2>Sprite</h2>
+            <span>R$ 6,00</span>
+            <input class="checkboxb" type="checkbox">
+          </div>
+          <div class="cardPizza1">
+            <h2>Dolly</h2>
+            <span>R$ 5,50</span>
+            <input class="checkboxb" type="checkbox">
+          </div>
+        </section>
+      </section>
+    </section>
+
+    <section class="carrinho container-grid">
+      <section class="title-carrinho">
+        <h2>Seu Carrinho</h2>
+        <h2>X</h2>
+      </section>
+      <section class="selecionada">
+        <div class="div">
+          <h2>Baiana</h2>
+          <h3>Calabresa fatiada, cebola, tomate, pimenta e azeitonas pretas</h3>
+          <hr>
+          <h2>R$ 49.90</h2>
+        </div>
+        <div>
+          <img src="./assets/images/pizza/pizza_baiana.png" alt="pizza baiana">
+        </div>
+      </section>
+      <section class="taxa">
+        <div>
+          <h2>Taxa de entrega:</h2>
+          <h3>R$ 4,00</h3>
+          <br>
+          <h2>Subtotal:</h2>
+          <h3>R$ 49,90</h3>
+        </div>
+        <div>
+          <h2>Total a pagar:</h2>
+          <h3>R$ 53,90</h3>
+          <button>Pagamento</button>
+        </div>
+
+      </section>
+    </section>
+
+    <!-- <section class="pizzas-card-container container-grid">
+        <h2>PIZZAS</h2>
+        <div class="pizzas-cards">
+          <div class="cardPizza"></div>
+        </div>
+      </section>
+
+      <div class="menu-container container-grid">
+        <h4>VER CARDÁPIO</h4>
+      </div> -->
+
+    <!-- <section class="about-us-container container-grid">
+        <div class="about-img"></div>
+        <article>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia totam numquam dolorum aperiam cupiditate itaque ipsa odit delectus quisquam qui atque, modi dignissimos nostrum quaerat obcaecati porro. Quaerat magnam, earum beatae repudiandae aut labore sit totam. Expedita commodi dicta, tempora sint pariatur, culpa unde aspernatur eligendi exercitationem voluptate nemo consectetur qui! Laborum quo libero suscipit cumque, esse possimus quidem praesentium rerum iste itaque deleniti dignissimos rem, odit ad magnam! Atque quia nulla expedita voluptatem mollitia, totam blanditiis culpa soluta vel, assumenda vitae voluptatibus quam deleniti iusto reprehenderit quasi velit odio, odit libero neque optio. Esse nesciunt aspernatur sed architecto eligendi.</p>
+        </article>
+      </section> -->
+  </main>
+  <footer></footer>
+</body>
+
+</html>

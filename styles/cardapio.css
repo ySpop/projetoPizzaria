@@ -1,0 +1,129 @@
+main {
+  background-color: var(--secondaryColor);
+}
+
+.pizzas-card-container {
+  /*adiconado as caracteristicas do container grid*/
+  /* border: 2px solid blue; */
+  max-width: 1100px;
+  /*maior que o container grid que é de 1000px*/
+  margin: 0 auto;
+  /* height: 500px; */
+  /* margin-bottom: 50px; */
+}
+
+.selecionar > .order-type-selector {
+  padding: 5px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-items: center;
+  align-content: center;
+  border: 1px solid var(--mainRed);
+  background-color: transparent;
+
+  p {
+    img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    width: 95px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.132);
+  }
+
+  p:hover {
+    transition: 0.2s ease-in;
+    color: #fff;
+    background-color: var(--mainRed);
+  }
+
+  span {
+    font-size: 16px;
+    color: #fff;
+  }
+}
+
+.slide {
+  background-color: lightcyan;
+}
+
+.carousel-caption > h3 {
+  color: black;
+}
+
+.carousel-caption > p {
+  color: red;
+}
+
+.qrcode {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    width: 60%;
+    color: red;
+  }
+}
+
+.redes {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rodape {
+  color: white;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+
+  h3 {
+    font-size: 10px;
+  }
+}
+
+.app-section {
+  border-radius: 15px;
+  box-shadow: var(--boxshadow);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid black; */
+  margin-top: 60px;
+}
+
+.app-content {
+  /* max-width: 900px;
+  margin: 0 auto; */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* border: 2px solid blue; */
+}
+
+.card-pizza-img {
+  position: relative;
+  z-index: 999;
+  width: 260px;
+  height: 150px;
+  /* border: 2px solid red; */
+  overflow: hidden;
+}
+
+footer {
+  margin: 0;
+}

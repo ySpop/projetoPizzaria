@@ -1,0 +1,681 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.modalHolder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  overflow-y: auto;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s;
+  padding: 40px;
+}
+
+.modalHolder.active {
+  visibility: visible;
+  opacity: 100%;
+}
+
+.modal-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  margin: auto;
+  width: 550px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: var(--boxShadow);
+  transition: opacity 0.3s ease-in-out, visibility 1.5s ease-in;
+  /* Adiciona transição para suavizar a exibição */
+  visibility: hidden;
+  /* Inicialmente escondido */
+  opacity: 0;
+  /* Inicialmente transparente */
+
+  h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    font-size: 20px;
+  }
+}
+
+.modal-container.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.selecionada {
+  background-color: #fff;
+  display: flex;
+  padding: 10px;
+  box-shadow: var(--boxShadow);
+  border-radius: 8px;
+  align-items: center;
+  justify-content: space-between;
+
+  .div {
+    h2 {
+      font-family: "Poppins";
+      font-weight: 700;
+      font-size: 22px;
+      display: flex;
+      text-wrap: nowrap;
+    }
+
+    p {
+      font-family: "Poppins";
+      color: #f2cb07;
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+
+  .bu {
+    padding: 5px;
+    background-color: #04dc00;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
+  .contador {
+    width: 50%;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
+    button {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    p {
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      padding: 0 10px 0 10px;
+      background-color: var(--mainGray);
+    }
+  }
+}
+
+.bu:hover {
+  color: #000;
+  transition: color 0.2s ease;
+}
+
+.tamanho {
+  padding: 10px;
+  box-shadow: var(--boxShadow);
+  border-radius: 10px;
+
+  h3 {
+    font-family: "Poppins";
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: #f2cb07;
+    border-radius: 8px;
+    padding: 7px;
+    color: white;
+  }
+
+  button {
+    width: 100%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.size-selected {
+  background-color: #00000010;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
+
+.btn-close-modal {
+  position: absolute;
+  left: 94%;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.opcoes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+
+  .cardPizza1 {
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+
+    h2 {
+      background-color: transparent;
+      color: black;
+      letter-spacing: 2px;
+      font-weight: 500;
+      margin-top: 5px;
+    }
+
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: var(--boxShadow);
+  }
+}
+
+.bebidas>h2 {
+  /* padding: 7px; */
+}
+
+.bebidas {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: var(--boxShadow);
+
+  .cardPizza1 {
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: var(--boxShadow);
+
+    span {
+      /* font-size: 1rem;
+            margin-left: 1rem; */
+    }
+  }
+
+  .section-name {
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: #f2cb07;
+    border-radius: 8px;
+    padding: 7px;
+    color: white;
+  }
+}
+
+.opcoes2 {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 5px;
+  box-shadow: var(--boxShadow);
+
+  .cardPizza1 {
+    width: 150px;
+    display: flex;
+    padding: 10px;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-size: 12px;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+    }
+  }
+
+  h2 {}
+}
+
+.cardPizza1>div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  h2 {
+    font-size: 12px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+}
+
+.checkboxb {
+  display: flex;
+  width: 20px;
+}
+
+.checkboxb[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0.2rem solid black;
+  font-size: 1rem;
+  padding: 0.1rem;
+  /* border-radius: 1rem; */
+  border-radius: 50%;
+}
+
+.checkboxb[type="checkbox"]::before {
+  content: "";
+  padding: 5px;
+  clip-path: circle(50%);
+  transform: scale(0);
+  background-color: black;
+}
+
+.checkboxb[type="checkbox"]:checked::before {
+  transform: scale(1);
+}
+
+.carrinho {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: space-between;
+  /* width: 80%; */
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: var(--boxShadow);
+
+  .selecionada {
+    align-items: center;
+  }
+}
+
+.taxa {
+  h3 {
+    color: #f2cb07;
+    font-family: "Poppins";
+  }
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: var(--boxShadow);
+
+  div>button {
+    font-family: "Poppins";
+    border: none;
+    height: 40px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    box-shadow: var(--boxShadow);
+  }
+}
+
+/* ################################# PERFIL MODAL */
+
+.perfil-modal {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  padding: 15px;
+  transform: translateX(100%);
+  border-radius: 10px;
+  background-color: #fff;
+  visibility: hidden;
+  box-shadow: var(--boxShadow);
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  opacity: 0;
+}
+
+.activePerfil {
+  transform: translateX(0);
+  margin-right: 60px;
+  margin-top: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.perfil-modal>div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.perfil-modal>div>button {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: var(--boxShadow);
+}
+
+.perfil-modal>div>button:hover {
+  transform: scale(1.1);
+}
+
+.btnLogin {
+  background-color: #000;
+  color: #fff;
+}
+
+.btnRegister {}
+
+.carrinho-modal {
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 20px;
+  width: 35vw;
+  padding: 15px;
+  transform: translateX(100%);
+  border-radius: 10px;
+  background-color: #fff;
+  visibility: hidden;
+  box-shadow: var(--boxShadow);
+  transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+  opacity: 0;
+}
+
+.activeCarrinho {
+  visibility: visible;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.title-carrinho {
+  display: flex;
+  color: red;
+  justify-content: space-between;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.selecionadaCarrinho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: var(--boxShadow);
+  padding: 10px;
+  gap: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.divCarrinho {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--boxShadow);
+  border-radius: 8px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+}
+
+.left-content-card-carrinho {
+  width: 50%;
+  height: 100%;
+}
+
+.cart-img-container {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+}
+
+.cart-img-container>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.buy-out {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: var(--boxShadow);
+}
+
+.cart-right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.priceAndQuantity {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item-quantity {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--mainOrange);
+}
+
+.cart-item-name {
+  text-wrap: nowrap;
+}
+
+.cart-item-desc {
+  color: var(--mainOrange);
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+.cart-item-price {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.cart-item-drink {
+  font-size: 12px;
+  font-weight: 600;
+  text-wrap: nowrap;
+}
+
+.cart-item-drinks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item-drinksdiv {
+  height: 100%;
+  display: flex;
+  gap: 4px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.cart-item-drinksprice {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--mainOrange);
+}
+
+.buy-out>div>h2 {
+  font-size: 21px;
+  font-weight: 500;
+  text-wrap: nowrap;
+}
+
+.buy-out>div>h3 {
+  color: var(--mainOrange);
+  font-weight: 500;
+}
+
+.cart-right-content>button {
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  box-shadow: var(--boxShadow);
+}
+
+.pop-up-pedido {
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  /* Ajuste a distância do topo conforme necessário */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.pop-up-pedido>h1 {
+  width: 365px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: green;
+  border-radius: 15px;
+  text-align: center;
+  /* Centraliza o texto */
+  margin-top: 20px;
+  /* text-shadow: 1px 1px 15px rgba(0, 0, 0, 0.662); */
+}
+
+.activePopUp {
+  display: flex;
+  justify-content: center;
+  visibility: visible;
+  opacity: 1;
+}
+
+.pop-up-animation {
+  animation: popUpEffect 0.5s ease-out forwards;
+}
+
+.modalGeolocationHolder {
+  visibility: hidden;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  /* Ajuste a distância do topo conforme necessário */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.modalGeolocationActive {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modalGeolocationContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  margin: auto;
+  width: 100px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: var(--boxShadow);
+  transition: opacity 0.3s ease-in-out, visibility 1.5s ease-in;
+  /* Adiciona transição para suavizar a exibição */
+  visibility: hidden;
+  /* Inicialmente escondido */
+  opacity: 0;
+  /* Inicialmente transparente */
+}
+
+@keyframes popUpEffect {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

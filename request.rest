@@ -1,0 +1,15 @@
+GET http://localhost:3000/users/
+
+######
+
+GET 
+
+####
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "name": "Hugo",
+    "senha": "sla"
+}

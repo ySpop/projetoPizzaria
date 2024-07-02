@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.img-logo {
+  width: 80px;
+  height: 80px;
+}
+
+body {
+  background-color: #f5ebdc;
+}
+
+.box-display {
+  height: 430px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.line {
+  height: 100%;
+  width: 2px;
+  background-color: black;
+}
+
+.img-register {
+  width: 450px;
+  height: 450px;
+}
+
+.create-account {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.topContent {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.topContent > h1 {
+  font-size: 40px;
+  margin-bottom: 3px;
+}
+
+.div-name {
+  margin-bottom: 20px;
+}
+
+.div-name > h3 {
+  font-size: 26px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+}
+
+.div-name > input {
+  width: 390px;
+  height: 40px;
+  border-radius: 18px;
+  border: none;
+  box-shadow: var(--boxShadow);
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.div-name > input::placeholder {
+  font-size: 16px;
+}
+
+.div-user {
+  margin-bottom: 20px;
+}
+
+.div-user > h3 {
+  font-size: 26px;
+  margin-bottom: 5px;
+  margin-left: 30px;
+}
+
+.div-user > input {
+  width: 390px;
+  height: 40px;
+  border-radius: 18px;
+  border: none;
+  box-shadow: var(--boxShadow);
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.div-user > input::placeholder {
+  font-size: 16px;
+}
+
+.div-password {
+  margin-bottom: 20px;
+}
+
+.div-password > h3 {
+  font-size: 26px;
+  margin-bottom: 5px;
+  margin-left: 40px;
+}
+
+.div-password > input {
+  width: 390px;
+  height: 40px;
+  border-radius: 18px;
+  border: none;
+  box-shadow: var(--boxShadow);
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.div-password > input::placeholder {
+  font-size: 16px;
+}
+
+.terms-user {
+  display: flex;
+}
+
+.terms-user > input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border: 1px solid;
+  background-color: transparent;
+  margin-left: 30px;
+}
+
+.terms-user > h5 {
+  font-size: 18px;
+  margin-left: 6px;
+  margin-bottom: 20px;
+}
+
+button {
+  width: 390px;
+  height: 40px;
+  background-color: #f2cb07;
+  border: none;
+  border-radius: 18px;
+  color: white;
+  font-size: 20px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+input {
+  box-shadow: var(--boxShadow);
+  outline: none;
+}

@@ -1,0 +1,284 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.promo-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+
+  .promo-img {
+    height: 330px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h2 {
+    font-family: "Roboto Slab", serif;
+    font-weight: 800;
+    font-size: 20px;
+  }
+}
+
+.pizzas-card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.pizzas-card-container>h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.pizzas-slider {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  /* z-index: -1; */
+  z-index: 1;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.kalzones-slider {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  /* z-index: -1; */
+  z-index: 1;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.pizzas-cards {
+  display: grid;
+  /* grid-template-columns: repeat(9, minmax(260px, 1fr)); */
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.kalzones-cards {
+  display: grid;
+  /* grid-template-columns: repeat(9, minmax(260px, 1fr)); */
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.cardPizza {
+  /* position: relative;
+  z-index: 2; */
+  width: 325px;
+  /*alterado tamanho dos cards para visualizar as imagens*/
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: var(--boxShadow);
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cardPizza:hover {
+  transform: scale(1.1);
+}
+
+.cardKalzones {
+  /* position: relative;
+  z-index: 2; */
+  width: 325px;
+  /*alterado tamanho dos cards para visualizar as imagens*/
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: var(--boxShadow);
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.cardKalzones:hover {
+  transform: scale(1.1);
+}
+
+.card-top {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.card-text-content {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid red; */
+}
+
+.card-line {
+  margin-bottom: 3px;
+  background-color: var(--mainGray);
+}
+
+.card-pizza-name {
+  font-family: "Poppins", sans-serif;
+  text-wrap: nowrap;
+}
+
+.card-pizza-prize {
+  font-family: "Poppins", sans-serif;
+  color: #000;
+}
+
+.card-pizza-desc {
+  width: 90%;
+  color: var(--mainOrange);
+  font-weight: bold;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-left-content {
+  /* border: 2px solid blue; */
+}
+
+.card-line {
+  width: 70%;
+  /* background-color: red; */
+  height: 2px;
+}
+
+.card-pizza-prize {
+  color: red;
+}
+
+.pizza-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: 2px solid blue; */
+  display: block;
+}
+
+.card-pizza-img {
+  position: relative;
+  z-index: 999;
+  width: 260px;
+  height: 150px;
+  /* border: 2px solid red; */
+  overflow: hidden;
+}
+
+.menu-container {
+  margin-top: 50px;
+  width: 100%;
+  height: 40px;
+  background-color: var(--mainOrange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+
+  h4 {
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    color: #fff;
+  }
+}
+
+.about-us-container {
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.about-us-container>article {
+  width: 400px;
+  height: 100%;
+  text-align: justify;
+}
+
+.about-img {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.about-img>img {
+  width: 300px;
+  height: 300px;
+}
+
+.slider-btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  background-color: #fff;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--boxShadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.pizzas-prev {
+  position: absolute;
+  left: 0;
+}
+
+.pizzas-next {
+  position: absolute;
+  right: 0;
+}
+
+.kal-prev {
+  position: absolute;
+  left: 0;
+}
+
+.kal-next {
+  position: absolute;
+  right: 0;
+}

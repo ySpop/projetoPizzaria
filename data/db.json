@@ -1,0 +1,265 @@
+{
+  "pizzasTradicionais": [
+    {
+      "id": "1",
+      "nome": "Quatro Queijos",
+      "descricao": "Mussarela, parmesão, gorgonzola, catupiry e azeitonas",
+      "precoPequena": "39.9",
+      "precoMedia": "49.90",
+      "precoGrande": "69.90",
+      "urlImage": "/assets/images/pizza/pizza_quatroqueijo.png"
+    },
+    {
+      "id": "2",
+      "nome": "Calabresa",
+      "descricao": "Calabresa fatiada, cebola e azeitonas",
+      "precoPequena": "39.9",
+      "precoMedia": "49.90",
+      "precoGrande": "69.90",
+      "urlImage": "/assets/images/pizza/pizza_calabresa.png"
+    },
+    {
+      "id": "3",
+      "nome": "Portuguesa",
+      "descricao": "Mussarela, presunto, milho verde, ovo cozido e azeitonas",
+      "precoPequena": "39.9",
+      "precoMedia": "49.90",
+      "precoGrande": "69.90",
+      "urlImage": "/assets/images/pizza/pizza_portuguesa.png"
+    },
+    {
+      "id": "4",
+      "nome": "Peperone",
+      "descricao": "Peperone em fatias, mussarela e azeitonas pretas",
+      "precoPequena": "39.9",
+      "precoMedia": "49.90",
+      "precoGrande": "69.90",
+      "urlImage": "/assets/images/pizza/pizza_peperone.png"
+    },
+    {
+      "id": "5",
+      "nome": "Mussarela",
+      "descricao": "Mussarela, tomate fatiado e azeitonas",
+      "precoPequena": "39.9",
+      "precoMedia": "49.90",
+      "precoGrande": "69.90",
+      "urlImage": "assets/images/pizza/pizza_mussarela.png"
+    },
+    {
+      "id": "6",
+      "nome": "Baiana",
+      "descricao": "Calabresa fatiada, cebola, tomate, pimenta e azeitonas pretas",
+      "precoPequena": "39.9",
+      "precoMedia": "49.90",
+      "precoGrande": "69.90",
+      "urlImage": "/assets/images/pizza/pizza_baiana.png"
+    },
+    {
+      "id": "7",
+      "nome": "Carne Seca",
+      "descricao": "Carne seca, mussarela, cebola, azeitonas pretas e tomate fatiado",
+      "precoPequena": "39.9",
+      "precoMedia": "49.90",
+      "precoGrande": "69.90",
+      "urlImage": "/assets/images/pizza/pizza_carneseca.png"
+    },
+    {
+      "id": "8",
+      "nome": "Frango Catupiry",
+      "descricao": "Frango desfiado, catupiry e azeitonas",
+      "precoPequena": "39.9",
+      "precoMedia": "49.90",
+      "precoGrande": "69.90",
+      "urlImage": "/assets/images/pizza/pizza_frangocatupiry.png"
+    }
+  ],
+  "pizzasDoces": [
+    {
+      "id": "1",
+      "nome": "Nutella",
+      "descricao": "Nutella com nozes",
+      "preco": "R$29.9"
+    },
+    {
+      "id": "2",
+      "nome": "Brigadeiro",
+      "descricao": "Chocolate com granulado",
+      "preco": "R$29.9"
+    },
+    {
+      "id": "3",
+      "nome": "Prestígio",
+      "descricao": "Chocolate, coco ralado",
+      "preco": "R$29.9"
+    },
+    {
+      "id": "4",
+      "nome": "Romeu e Julieta",
+      "descricao": "Goiabada com queijo",
+      "preco": "R$29.9"
+    },
+    {
+      "id": "5",
+      "nome": "Uva Verde",
+      "descricao": "Uva verde com chocolate e granulado",
+      "preco": "R$29.9"
+    }
+  ],
+  "bebidas": [
+    {
+      "id": "1",
+      "nome": "Coca-Cola",
+      "descricao": "Refrigerante",
+      "preco": "R$7",
+      "tamanho": "350 ml"
+    },
+    {
+      "id": "2",
+      "nome": "Guarana",
+      "descricao": "Refrigerante",
+      "preco": "R$6,50",
+      "tamanho": "350 ml"
+    },
+    {
+      "id": "3",
+      "nome": "Fanta Laranja",
+      "descricao": "Refrigerante",
+      "preco": 6.5,
+      "tamanho": "350 ml"
+    },
+    {
+      "id": "4",
+      "nome": "Sprite",
+      "descricao": "Refrigerante",
+      "preco": "R$6",
+      "tamanho": "350 ml"
+    },
+    {
+      "id": "5",
+      "nome": "Dolly",
+      "descricao": "Refrigerante",
+      "preco": "R$5,50",
+      "tamanho": "350 ml"
+    },
+    {
+      "id": "6",
+      "nome": "Dolly Limão",
+      "descricao": "Refrigerante",
+      "preco": 5.5,
+      "tamanho": "350 ml"
+    }
+  ],
+  "kalzonesDoces": [
+    {
+      "id": "1",
+      "nome": "Kalzone de Coco",
+      "descricao": "Recheio de coco com leite condensado",
+      "preco": "R$11,90"
+    },
+    {
+      "id": "2",
+      "nome": "Kalzone de Chocolate",
+      "descricao": "Recheio de chocolate",
+      "preco": "R$11,90"
+    },
+    {
+      "id": "3",
+      "nome": "Kalzone de Morango",
+      "descricao": "Recheio de morango com chocolate",
+      "preco": "R$11,90"
+    },
+    {
+      "id": "4",
+      "nome": "Kalzone de Nutella",
+      "descricao": "Recheio de nutella",
+      "preco": "R$11,90"
+    }
+  ],
+  "kalzoneSalgados": [
+    {
+      "id": "1",
+      "nome": "Kalzone de Bacon",
+      "descricao": "Recheio de bacon",
+      "preco": "R$11,90",
+      "urlImage": "/assets/images/kalzones/kalbacon.png"
+    },
+    {
+      "id": "2",
+      "nome": "Kalzone de Queijo",
+      "descricao": "Recheio de mussarela e oregano",
+      "preco": "R$11,90",
+      "urlImage": "/assets/images/kalzones/kalqueijo.png"
+    },
+    {
+      "id": "3",
+      "nome": "Kalzone de Presunto",
+      "descricao": "Recheio de presunto",
+      "preco": "R$11,90",
+      "urlImage": "/assets/images/kalzones/kalpresunto.png"
+    },
+    {
+      "id": "4",
+      "nome": "Kalzone de Frango",
+      "descricao": "Recheio de frango desfiado e catupiry",
+      "preco": "R$11,90",
+      "urlImage": "/assets/images/kalzones/kalfrango.png"
+    },
+    {
+      "id": "5",
+      "nome": "Kalzone de salame",
+      "descricao": "Recheio de salame",
+      "preco": "R$11,90",
+      "urlImage": "/assets/images/images/kalzones/kalsalame.png"
+    },
+    {
+      "id": "6",
+      "nome": "Kalzone de Peperoni",
+      "descricao": "Recheio de peperoni",
+      "preco": "R$11,90",
+      "urlImage": "/assets/images/kalzones/kalpeperone.png"
+    }
+  ],
+  "users": [
+    {
+      "id": "d6f8",
+      "name": "Leticia",
+      "username": "let.ltcaalaide",
+      "password": "ventilador"
+    },
+    {
+      "id": "ad18",
+      "username": "let@gmail",
+      "password": "dsada"
+    },
+    {
+      "id": "5b58",
+      "name": "Edson",
+      "username": "Ed",
+      "password": "12345"
+    },
+    {
+      "id": "2bfb",
+      "name": "jose",
+      "username": "jj",
+      "password": "jj123"
+    },
+    {
+      "id": "03a5",
+      "name": "Daniel",
+      "username": "Daniel",
+      "password": "123"
+    },
+    {
+      "id": "5643",
+      "name": "dani",
+      "username": "dandan",
+      "password": "dan123"
+    },
+    {
+      "id": "012c",
+      "name": "DANIEL CARPES DE OLIVEIRA",
+      "username": "Dani",
+      "password": "123456"
+    }
+  ]
+}
